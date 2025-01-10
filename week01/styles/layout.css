@@ -6,28 +6,28 @@ body {
   }
   
   header {
-    background: lightpink;
+    background: rgb(33, 33, 33);
     padding: 2rem;
     grid-column: 1 / 4;
   }
   
   .left-sidebar {
-    background: lightblue;
+    background: rgb(171, 171, 171);
     grid-column: 1 / 2;
   }
   
   main {
-    background: coral;
+    background: rgb(171, 171, 171);
     grid-column: 2 / 3;
   }
   
   .right-sidebar {
-    background: yellow;
+    background: rgb(255, 255, 255);
     grid-column: 3 / 4;
   }
   
   footer {
-    background: wheat;
+    background: rgb(33, 33, 33)
     padding: 2rem;
     text-align: center;
     grid-column: 1 / 4;
@@ -39,10 +39,26 @@ body {
   }
 
   nav {
-    padding: 10px;
     display: flex;
-    justify-content: space-evenly;
-    align-items: left;
+    gap: 10px;
+}
 
-  }
+nav a {
+    text-decoration: none;
+    padding: 10px 15px;
+    background-color: #ffffff; 
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+nav a:hover {
+    background-color: #ffffff; 
+    transform: scale(1.05); 
+}
   
+  h1 {
+    color: white;
+  }
+
