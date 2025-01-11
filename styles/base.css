@@ -80,7 +80,7 @@ body {
     overflow: hidden; 
   }
   
-  section.resources h4 {
+  section.resources h2 {
     background-color: #003366;
     color: white;
     margin: -20px -20px 20px -20px;
