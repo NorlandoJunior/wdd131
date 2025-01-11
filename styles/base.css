@@ -1,0 +1,140 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  header {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  nav {
+    margin: 10px 0;
+  }
+  
+  nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .main-container {
+    display: flex; /* Ativa o layout flexbox */
+    justify-content: space-between; /* Espaçamento entre os itens */
+    gap: 20px; /* Espaçamento entre as colunas */
+    padding: 20px; /* Margem interna */
+    background-color: #f4f4f4;
+    flex-wrap: wrap; 
+  }
+  
+  
+  .section {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    grid: 4; 
+    min-width: 250px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    word-wrap: break-word; 
+    overflow: hidden; 
+  }
+  
+  section.resources {
+    background-color: white;
+    border: 4px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    flex: 2; 
+    min-width: 250px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    word-wrap: break-word;
+    overflow: hidden; 
+  }
+  
+  section.resources h2 {
+    background-color: #003366;
+    color: white;
+    margin: -20px -20px 20px -20px;
+    padding: 10px;
+    text-align: center;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+  
+  section.resources ul {
+    list-style-type: disc;
+    padding-left: 10px;
+    margin: 0;
+  }
+  
+  section.resources li {
+    margin: 10px 0;
+  }
+  
+  section.resources a {
+    color: #4a4aff;
+    text-decoration: none;
+  }
+  
+  section.resources a:hover {
+    text-decoration: underline;
+  }
+  
+  .about p {
+    width: 60%;
+    line-height: 1.6;
+  }
+  
+  .profile-img {
+    width: 150px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  section.location {
+    text-align: center;
+  }
+  
+  .location img.flag {
+    width: 200px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .caption {
+    font-size: 0.9em;
+    color: #666;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #003366;
+    color: white;
+    font-size: 0.9em;
+    margin-top: 20px;
+  }
+  
