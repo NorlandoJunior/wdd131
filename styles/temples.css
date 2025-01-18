@@ -43,6 +43,12 @@ nav a {
     text-decoration: none;
 }
 
+nav a:hover {
+    color: #ffcc00; 
+    text-decoration: underline; 
+    transition: color 0.3s ease-in-out;
+}
+
 .hidden {
     display: none;
 }
