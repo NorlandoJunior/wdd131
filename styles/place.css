@@ -1,0 +1,100 @@
+:root {
+    --main-bg: #d12c2c;
+    --secondary-bg: #2b7a2b;
+    --white: #ffffff;
+    --text-color: #000000;
+    --box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+  }
+  
+  header {
+    background-color: var(--main-bg);
+    color: var(--white);
+    text-align: center;
+    padding: 1.5rem 0;
+  }
+  
+  header h1 {
+    font-size: 2rem;
+    margin: 0;
+  }
+  
+  .hero {
+    position: relative;
+    text-align: center;
+  }
+  
+  .hero img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .info-box {
+    position: absolute;
+    background-color: var(--white);
+    border: 2px solid var(--secondary-bg);
+    border-radius: 8px;
+    box-shadow: var(--box-shadow);
+    padding: 1rem;
+    color: var(--text-color);
+    text-align: left;
+  }
+  
+  .data {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+  }
+  
+  .weather {
+    bottom: 20%;
+    right: 5%;
+    width: 250px;
+  }
+  
+  .info-box h2 {
+    background-color: var(--secondary-bg);
+    color: var(--white);
+    padding: 0.5rem;
+    margin: -1rem -1rem 1rem -1rem;
+    text-align: center;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+  }
+  
+  .info-box ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .info-box li {
+    margin: 0.5rem 0;
+  }
+  
+  footer {
+    background-color: var(--main-bg);
+    color: var(--white);
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  footer p {
+    margin: 0.5rem 0;
+  }
+  
+  footer p:last-child {
+    font-size: 0.9rem;
+  }
+  
+  .weather-icon {
+    font-size: 1.5rem;
+    margin-left: 0.5rem;
+  }
+  
