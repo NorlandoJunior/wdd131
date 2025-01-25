@@ -1,5 +1,5 @@
 :root {
-    --main-bg: rgba(177, 30, 30, 1); /* Corrigido para rgba */
+    --main-bg: rgba(177, 30, 30, 1);
     --secondary-bg: rgb(30, 129, 176);
     --white: rgb(238, 238, 228);
     --text-color: #000000;
@@ -8,7 +8,6 @@
 
 body {
     font-family: "Raleway", serif;
-    font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
     margin: 0;
@@ -21,11 +20,11 @@ h2 {
     font-family: "Ubuntu", sans-serif;
     font-weight: 700;
     font-style: normal;
-    position: relative; /* Necessário para usar ::after */
+    position: relative; 
 }
 
 h2::after {
-    content: ""; /* Corrigido o uso do conteúdo */
+    content: "";
     display: block;
     width: 50%; 
     height: 4px; 
