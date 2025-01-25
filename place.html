@@ -1,74 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Country or Places</title>
     <meta name="author" content="Norlando Santos Barbosa Junior">
-    <meta name="description" content="is page about a country or place where I'm live or have visited or wish to visit">
+    <meta name="description" content="Explore São Paulo: information about its area, population, weather, and more.">
+    <title>São Paulo - City Overview</title>
+
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="styles/place.css">
     <link rel="stylesheet" href="styles/places-responsive.css">
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100..900&family=Ubuntu:wght@300..700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-
     <header>
-        <h1>São Paulo</h1>
+        <h1 aria-label="São Paulo, Brazil">São Paulo</h1>
     </header>
 
     <main>
-
         <section class="hero">
-
-            <img 
-            src="images/sao-paulo-img-large.webp"
-            source srcset="images/sao-paulo-img-medium.webp" media="(min-width: 500px)"
-            source srcset="images/sao-paulo-img-small.webp" media="(min-width:500px )"
-            alt="MASP Museum in São Paulo">
+            <picture>
+                <source srcset="images/sao-paulo-img-large.webp" media="(min-width: 1024px)">
+                <source srcset="images/sao-paulo-img-medium.webp" media="(min-width: 500px)">
+                <img src="images/sao-paulo-img-small.webp" alt="MASP Museum in São Paulo, Brazil" loading="lazy">
+            </picture>
 
             <div class="info-box data">
-            <h2>Data</h2>
-            <ul>
-                <li><strong>Area:</strong> 1.523 sq Km</li>
-                <li><strong>Population:</strong> 22,990,000</li>
-                <li><strong>Capital</strong> São Paulo</li>
-                <li><strong>Languages:</strong> Portuguese</li>
-                <li><strong>Currency:</strong> Brazilian Real</li>
-                <li><strong>Time Zone:</strong> UTC-3</li>
-                <li><strong>Calling Code:</strong> +11</li>
-                <li><strong>Internet TLD:</strong> .br</li>
-            </ul>
-             </div> 
+                <h2><Data>Data</Data></h2>
+                <ul>
+                    <li><strong>Area:</strong> 1,523 sq km</li>
+                    <li><strong>Population:</strong> 22,990,000</li>
+                    <li><strong>Capital:</strong> São Paulo</li>
+                    <li><strong>Languages:</strong> Portuguese</li>
+                    <li><strong>Currency:</strong> Brazilian Real</li>
+                    <li><strong>Time Zone:</strong> UTC-3</li>
+                    <li><strong>Calling Code:</strong> +11</li>
+                    <li><strong>Internet TLD:</strong> .br</li>
+                </ul>
+            </div>
 
-             <div class="info-box weather">
-
-                <h2>Weather <span class="weather-icon">⛅</span></h2>
-                
+            <div class="info-box weather">
+                <h2>Weather <span class="weather-icon" aria-hidden="true">⛅</span></h2>
                 <ul>
                     <li><strong>Temperature:</strong> 21°C</li>
                     <li><strong>Conditions:</strong> Light rain</li>
                     <li><strong>Wind:</strong> 5 km/h</li>
                     <li><strong>Wind Chill:</strong> <span id="windchill">N/A</span></li>
                 </ul>
-             </div>
-
+            </div>
         </section>
-
     </main>
 
     <footer>
-            <p>
-               &copy; <span id="currentyear"></span> 👾 Norlando Santos Barbosa Junior 👾 Brazil.
-            </p>
-            <p id="lastModified"></p>
-            <script src="scripts/getdates.js"></script>
+        <p>&copy; <span id="currentyear"></span> 👾 Norlando Santos Barbosa Junior, Brazil 👾</p>
+        <p id="lastModified"></p>
+        <script src="scripts/getdates.js" defer></script>
     </footer>
 
+    <!-- Scripts -->
     <script src="scripts/place.js" defer></script>
-
 </body>
+
 </html>
