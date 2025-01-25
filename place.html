@@ -8,6 +8,10 @@
     <meta name="description" content="is page about a country or place where I'm live or have visited or wish to visit">
     <link rel="stylesheet" href="styles/place.css">
     <link rel="stylesheet" href="styles/places-responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -22,11 +26,11 @@
 
             <img 
             src="images/sao-paulo-img-large.webp"
-            srcset="images/sao-paulo-img-small.webp 600w, images/sao-paulo-img-medium.webp 1200w"
-            sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            source srcset="images/sao-paulo-img-medium.webp" media="(min-width: 500px)"
+            source srcset="images/sao-paulo-img-small.webp" media="(min-width:500px )"
             alt="MASP Museum in São Paulo">
 
-            <div class="info-box date">
+            <div class="info-box data">
             <h2>Data</h2>
             <ul>
                 <li><strong>Area:</strong> 1.523 sq Km</li>
@@ -41,6 +45,7 @@
              </div> 
 
              <div class="info-box weather">
+
                 <h2>Weather <span class="weather-icon">⛅</span></h2>
                 
                 <ul>

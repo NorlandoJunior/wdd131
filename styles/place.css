@@ -1,16 +1,27 @@
 :root {
-    --main-bg: #d12c2c;
-    --secondary-bg: #2b7a2b;
-    --white: #ffffff;
+    --main-bg: rgb(177, 30, 30, 1);
+    --secondary-bg: rgb(30,129,176);
+    --white: rgb(238,238,228);
     --text-color: #000000;
     --box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   }
   
   body {
-    font-family: Arial, sans-serif;
+    font-family: "Raleway", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
     margin: 0;
     padding: 0;
     background-color: #f8f8f8;
+  }
+
+  h1,
+  h2 {
+    font-family: "Ubuntu", serif;
+    font-weight: 700;
+    font-style: normal;
+
   }
   
   header {
@@ -26,14 +37,16 @@
   }
   
   .hero {
-    position: relative;
-    text-align: center;
+    position: relative; /* Define o contexto de posicionamento */
+    width: 100%; /* Garantir que o tamanho seja consistente */
+    height: auto;
   }
-  
+
   .hero img {
     width: 100%;
     height: auto;
-  }
+    object-fit: cover;
+}
   
   .info-box {
     position: absolute;
@@ -47,10 +60,17 @@
   }
   
   .data {
-    position: absolute;
-    top: 50%;
-    left: 5%;
-  }
+        position: absolute;
+        top: 0; /* Posiciona no topo */
+        left: 0; /* Posiciona na esquerda */
+        margin: 1rem; /* Adiciona um espaçamento interno */
+        background-color: var(--white); /* Estilo adicional */
+        border: 2px solid var(--secondary-bg); /* Estilo adicional */
+        border-radius: 8px;
+        box-shadow: var(--box-shadow);
+        color: var(--text-color);
+        text-align: left;
+    }
   
   .weather {
     bottom: 20%;
