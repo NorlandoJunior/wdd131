@@ -1,7 +1,7 @@
 @media (max-width: 768px) {
     .hero {
-        position: relative; /* Define o contexto de posicionamento */
-        width: 100%; /* Garantir que o tamanho seja consistente */
+        position: relative;
+        width: 100%; 
         height: auto;
     }
     

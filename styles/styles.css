@@ -36,10 +36,12 @@ section{
 	padding: 1rem;
 }
 
-h2 {
-	color: navy;
-	grid-column: 1/3;
-}
+h2::after {
+    content: "⭐"; 
+	display: inline-block;
+	font-size: 2rem;
+	color: var(--secondary-bg);
+	margin-left: 0.5rem;}
 
 h3{
 	margin-bottom: 0.5rem;
