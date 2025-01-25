@@ -1,15 +1,30 @@
 @media (max-width: 768px) {
-        .info-box.data {
-            top: 1rem;
-            left: 1rem;
-            width: calc(100% - 2rem); 
-        }
-    
-        .info-box.weather {
-            top: auto; 
-            bottom: 1rem;
-            right: 1rem;
-            left: 1rem;
-            width: calc(100% - 2rem);
-        }
+    .info-box.data,
+    .info-box.weather {
+        position: relative;
+        margin: 1rem; 
+        width: calc(100% - 2rem); 
     }
+
+    .info-box.weather {
+        order: 2; 
+    }
+
+    .info-box.data {
+        order: 1; 
+    }
+}
+
+@media (min-width: 769px) {
+    .info-box.data {
+        top: 0;
+        left: 0;
+        margin: 1rem;
+    }
+
+    .info-box.weather {
+        bottom: 20%;
+        right: 5%;
+        margin: 1rem;
+    }
+}
