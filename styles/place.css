@@ -1,5 +1,5 @@
 :root {
-    --main-bg: rgba(177, 30, 30, 1);
+    --main-bg: rgba(177, 30, 30, 1); /* Corrigido para rgba */
     --secondary-bg: rgb(30, 129, 176);
     --white: rgb(238, 238, 228);
     --text-color: #000000;
@@ -24,24 +24,14 @@ h2 {
     position: relative; /* Necessário para usar ::after */
 }
 
-
 h2::after {
-    content: " ";
+    content: ""; /* Corrigido o uso do conteúdo */
     display: block;
     width: 50%; 
     height: 4px; 
     background-color: var(--secondary-bg); 
     margin: 0.5rem auto 0; 
     border-radius: 4px; 
-}
-
-
-h2::after {
-    content: "";
-    display: inline-block;
-    font-size: 1.5rem;
-    color: var(--secondary-bg);
-    margin-left: 0.5rem; 
 }
 
 header {
@@ -74,19 +64,6 @@ header h1 {
     border-radius: 8px;
     box-shadow: var(--box-shadow);
     padding: 1rem;
-    color: var(--text-color);
-    text-align: left;
-}
-
-.data {
-    position: absolute;
-    top: 0;
-    left: 0;
-    margin: 1rem;
-    background-color: var(--white);
-    border: 2px solid var(--secondary-bg);
-    border-radius: 8px;
-    box-shadow: var(--box-shadow);
     color: var(--text-color);
     text-align: left;
 }
