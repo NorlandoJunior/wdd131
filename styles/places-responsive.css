@@ -1,45 +1,30 @@
 @media (max-width: 768px) {
-    .hero {
-        display: flex;
-        flex-direction: column; /* Empilha as caixas de informação */
-        align-items: stretch; /* Certifica-se de que elas ocupem toda a largura */
-    }
-
     .info-box.data,
     .info-box.weather {
+        position: relative;
         margin: 1rem; 
-        width: 100%; /* Para garantir que as caixas ocupem toda a largura disponível */
+        width: calc(100% - 2rem); 
     }
 
     .info-box.weather {
-        order: 2; /* Coloca o box de clima abaixo da caixa de dados */
+        order: 2; 
     }
 
     .info-box.data {
-        order: 1; /* Coloca a caixa de dados acima da caixa de clima */
+        order: 1; 
     }
 }
 
 @media (min-width: 769px) {
-    .hero {
-        display: flex;
-        justify-content: space-between; /* Garante o layout lado a lado em telas maiores */
-    }
-
-    .info-box.data,
-    .info-box.weather {
-        position: relative;
+    .info-box.data {
+        top: 0;
+        left: 0;
         margin: 1rem;
-        width: auto; /* Ajusta a largura das caixas para o layout em telas grandes */
     }
 
     .info-box.weather {
         bottom: 20%;
         right: 5%;
-    }
-
-    .info-box.data {
-        top: 0;
-        left: 0;
+        margin: 1rem;
     }
 }
