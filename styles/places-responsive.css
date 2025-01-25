@@ -1,47 +1,17 @@
 @media (max-width: 768px) {
-    .hero {
-        position: relative;
-        width: 100%; 
-        height: auto;
-    }
+        .info-box.data {
+            top: 1rem;
+            left: 1rem;
+            width: calc(100% - 2rem); 
+        }
     
-    .hero img {
-        width: 100%;
-        height: auto;
-        object-fit: cover;
-    }
-    
-    .info-box {
-        position: absolute;
-        background-color: var(--white);
-        border: 2px solid var(--secondary-bg);
-        border-radius: 8px;
-        box-shadow: var(--box-shadow);
-        padding: 1rem;
-        color: var(--text-color);
-        text-align: left;
-    }
-    
-    .info-box.data {
-        top: 0;
-        left: 0;
-        margin: 1rem;
-    }
-    
-    .info-box.weather {
-        bottom: 20%;
-        right: 5%;
-        width: 250px;
-    }
-    
-    .info-box h2 {
-        background-color: var(--secondary-bg);
-        color: var(--white);
-        padding: 0.5rem;
-        margin: -1rem -1rem 1rem -1rem;
-        text-align: center;
-        border-top-left-radius: 6px;
-        border-top-right-radius: 6px;
+        .info-box.weather {
+            top: auto; 
+            bottom: 1rem;
+            right: 1rem;
+            left: 1rem;
+            width: calc(100% - 2rem);
+        }
     }
 
 
