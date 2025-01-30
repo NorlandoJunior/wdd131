@@ -1,0 +1,21 @@
+/* Ajuste para telas menores */
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hero img {
+        width: 100%;
+        height: auto;
+    }
+
+    .team, .pilots {
+        padding: 10px;
+    }
+}

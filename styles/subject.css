@@ -1,0 +1,27 @@
+body {
+    background-color: var(--main-bg);
+    color: var(--white);
+}
+
+h1, h2 {
+    color: var(--white);
+}
+
+nav a {
+    color: var(--white);
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav a:hover {
+    color: var(--secondary-bg);
+}
+
+
+a {
+    color: var(--white);
+}
+
+a:hover {
+    color: yellow;
+}
