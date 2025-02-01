@@ -97,6 +97,50 @@ const temples = [
         imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/frankfurt-germany-temple/frankfurt-germany-temple-43184.jpg"
 
     },
+
+    {
+        templeName: "Slat Lake",
+        location: "Salt Lake, Temple",
+        dedicated: "1893, April 24",
+        area: 382207,
+        imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/salt-lake-temple/salt-lake-temple-9375.jpg" 
+
+    },
+
+    {
+        templeName: "Paris France",
+        location: "Paris France, Temple",
+        dedicated: "2017, May 21",
+        area: 44175,
+        imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/paris-france-temple/paris-france-temple-2054.jpg"
+
+    },
+
+    {
+        templeName: "Arequipa Peru",
+        location: "Arequipa Peru, Temple",
+        dedicated: "2019, December 15",
+        area: 26969,
+        imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/arequipa-peru-temple/arequipa-peru-temple-32869.jpg"
+    },
+
+    {
+        templeName: "Nauvoo Illinois",
+        location: "Nauvoo Illinois, Temple",
+        dedicated: "2002, June 30",
+        area: 54000,
+        imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/nauvoo-illinois-temple/nauvoo-illinois-temple-7470.jpg"
+
+    },
+
+    {
+        templeName: "Indianapolis Indiana",
+        location: "Indianapolis Indiana, Temple",
+        dedicated: "2015, August 23",
+        area: 34000,
+        imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/indianapolis-indiana-temple/indianapolis-indiana-temple-11080.jpg"
+
+    },
 ]
 
 export { temples };
