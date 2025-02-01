@@ -9,108 +9,29 @@
     <link rel="stylesheet" href="styles/filtered-temples.css">
     <link rel="stylesheet" href="styles/filtered-temples-large.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <script src="scripts/temples.js" defer></script>
+    <script type="module" src="scripts/main.js"></script>
 </head>
+
 <body>
     <header>
         <h1>Temples</h1>
         <button id="hamburger" aria-label="Toggle Menu">☰</button>
         <nav id="main-nav" class="hidden">
             <ul>
-                <a href="index.html" data-filter="all">Home</a>
-                <a href="old.html" data-filter="old">Old</a>
-                <a href="new.html" data-filter="new">New</a>
-                <a href="large.html" data-filter="large">Large</a>
-                <a href="small.html" data-filter="small">Small</a>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#" data-filter="old">Old</a></li>
+                <li><a href="#" data-filter="new">New</a></li>
+                <li><a href="#" data-filter="large">Large</a></li>
+                <li><a href="#" data-filter="small">Small</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
+
         <h2>Temple Album</h2>
-        <div class="container">
+        <div id="temple-container" class="container"></div>
 
-            <div class="card">
-               <h3>Aba Nigeria</h3>
-               <p><strong>Location:</strong> Aba, Nigeria</p>
-               <p><strong>Dedicated:</strong> 2005, August 7</p>
-               <p><strong>Size:</strong> 11,500 sq ft</p>
-               <img src="images/aba-nigeria-temple.jpg" alt="Aba Nigeria Temple" loading="lazy">
-            </div>
-            
-            <div class="card">
-                <h3>Apia Samoa</h3>
-                <p><strong>Location:</strong> Apia, Samoa</p>
-                <p><strong>Dedicated:</strong> 1983, August 5</p>
-                <p><strong>Size:</strong> 18,691 sq ft</p>
-                <img src="images/apia-samoa-temple.jpg" alt="Apia Samoa Temple" loading="lazy">
-            </div>
-
-            <div class="card">
-                <h3>Belem Brazil</h3>
-                <p><strong>Location:</strong> Belem, Brazil</p>
-                <p><strong>Dedicated:</strong> 2020, November 22</p>
-                <p><strong>Size:</strong> 28,000 sq ft</p>
-                <img src="images/belem_brazil_temple.jpg" alt="Belem Brazil Temple" loading="lazy">
-            </div>
-
-            <div class="card">
-                <h3>Bern Switzerland</h3>
-                <p><strong>Location:</strong> Bern, Switzerland</p>
-                <p><strong>Dedicated:</strong> 1955, Setember 15</p>
-                <p><strong>Size:</strong> 35,546 sq ft</p>
-                <img src="images/ber-switzerland-temple.jpg" alt="Ber Switzerland">
-            </div>
-
-            <div class="card">
-                <h3>Boise Idaho</h3>
-                <p><strong>Location:</strong> Boise, Idaho</p>
-                <p><strong>Dedicated:</strong> 1984, May 30</p>
-                <p><strong>Size:</strong> 35,868 sq ft</p>
-                <img src="images/Boise-Idaho-Temple.jpg" alt="Boise Idaho">
-            </div>
-
-            <div class="card">
-                <h3>Campinas Brazil</h3>
-                <p><strong>Location:</strong> Campinas, Brazil</p>
-                <p><strong>Dedicated:</strong> 2002, May 17</p>
-                <p><strong>Size:</strong> 48,100 sq ft</p>
-                <img src="images/campinas-brazil-temple.jpg" alt="Campinas São Paulo">
-            </div>
-
-            <div class="card">
-                <h3>Colonia Juarez Chihuahua Mexico</h3>
-                <p><strong>Location:</strong> Colonia Juarez Chihuahua, Mexico</p>
-                <p><strong>Dedicated:</strong> 1999, March 7</p>
-                <p><strong>Size:</strong> 6,800 sq ft</p>
-                <img src="images/colonia-juarez-chihuahua-mexico-temple.jpg" alt="Colonia Juarez Chihuahua Mexico">
-            </div>
-
-            <div class="card">
-                <h3>Recife Brazil</h3>
-                <p><strong>Location:</strong> Recife, Brazil</p>
-                <p><strong>Dedicated:</strong> 2000, December 15</p>
-                <p><strong>Size:</strong> 37,200 sq ft</p>
-                <img src="images/recife-brazil-temple.jpg" alt="Recife Brazil">
-            </div>
-
-            <div class="card">
-                <h3>São Paulo Brazil</h3>
-                <p><strong>Location:</strong> São Paulo, Brazil</p>
-                <p><strong>Dedicated:</strong> 1978, November 2</p>
-                <p><strong>Size:</strong> 59,246 sq ft</p>
-                <img src="images/sao-paulo-temple.jpg" alt="São Paulo Brazil">
-            </div>
-
-            <div class="card">
-                <h3>Frankfurt Temple</h3>
-                <p><strong>Location:</strong> Frankfurt, Temple</p>
-                <p><strong>Dedicated:</strong> 1987, August 30</p>
-                <p><strong>Size:</strong> 32,895 sq ft</p>
-                <img src="images/frankfurt-temple.jpg" alt="Frankfurt Temple">
-            </div>
-
-        </div>
     </main>
 
     <footer>
@@ -118,54 +39,5 @@
         <p>Last Modified: <span id="lastModified"></span></p>
     </footer>
 
-    <script>
-        const temples = [
-            { name: "Aba Nigeria", location: "Aba, Nigeria", dedicated: 2005, size: 11500, image: "images/aba-nigeria-temple.jpg" },
-            { name: "Apia Samoa", location: "Apia, Samoa", dedicated: 1983, size: 18691, image: "images/apia-samoa-temple.jpg" },
-            { name: "Belem Brazil", location: "Belem, Brazil", dedicated: 2020, size: 28000, image: "images/belem_brazil_temple.jpg" },
-            { name: "Salt Lake", location: "Salt Lake City, USA", dedicated: 1893, size: 253000, image: "images/salt-lake-temple.jpg" },
-            { name: "Payson Utah", location: "Payson, Utah, USA", dedicated: 2015, size: 96630, image: "images/payson-utah-temple.jpg" }
-        ];
-
-        function displayTemples(filter) {
-            const container = document.getElementById("temple-container");
-            container.innerHTML = "";
-
-            let filteredTemples = temples;
-
-            if (filter === "old") {
-                filteredTemples = temples.filter(t => t.dedicated < 1900);
-            } else if (filter === "new") {
-                filteredTemples = temples.filter(t => t.dedicated > 2000);
-            } else if (filter === "large") {
-                filteredTemples = temples.filter(t => t.size > 90000);
-            } else if (filter === "small") {
-                filteredTemples = temples.filter(t => t.size < 10000);
-            }
-
-            filteredTemples.forEach(temple => {
-                const card = document.createElement("div");
-                card.classList.add("card");
-                card.innerHTML = `
-                    <h3>${temple.name}</h3>
-                    <p><strong>Location:</strong> ${temple.location}</p>
-                    <p><strong>Dedicated:</strong> ${temple.dedicated}</p>
-                    <p><strong>Size:</strong> ${temple.size} sq ft</p>
-                    <img src="${temple.image}" alt="${temple.name}" loading="lazy">
-                `;
-                container.appendChild(card);
-            });
-        }
-
-        document.querySelectorAll("nav ul li a").forEach(link => {
-            link.addEventListener("click", (event) => {
-                event.preventDefault();
-                const filter = event.target.getAttribute("data-filter");
-                displayTemples(filter);
-            });
-        });
-
-        displayTemples("all");
-    </script>
 </body>
 </html>

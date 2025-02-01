@@ -11,50 +11,99 @@ hamburger.addEventListener('click', () => {
 });
 
 
+//Temples objects
+
 const temples = [
-    { name: "Aba Nigeria", location: "Aba, Nigeria", dedicated: 2005, size: 11500, image: "images/aba-nigeria-temple.jpg" },
-    { name: "Apia Samoa", location: "Apia, Samoa", dedicated: 1983, size: 18691, image: "images/apia-samoa-temple.jpg" },
-    { name: "Belem Brazil", location: "Belem, Brazil", dedicated: 2020, size: 28000, image: "images/belem_brazil_temple.jpg" },
-    { name: "Salt Lake", location: "Salt Lake City, USA", dedicated: 1893, size: 253000, image: "images/salt-lake-temple.jpg" },
-    { name: "Payson Utah", location: "Payson, Utah, USA", dedicated: 2015, size: 96630, image: "images/payson-utah-temple.jpg" }
-];
+    {
+      templeName: "Aba Nigeria",
+      location: "Aba, Nigeria",
+      dedicated: "2005, August, 7",
+      area: 11500,
+      imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/aba-nigeria/400x250/aba-nigeria-temple-lds-273999-wallpaper.jpg"
+    },
 
-function displayTemples(filter) {
-    const container = document.getElementById("temple-container");
-    container.innerHTML = "";
+     {
+     templeName: "Apia Samo",
+     location: "Apia, Samoa",
+     dedicated: "1983, August 5",
+     area: 18691,
+     imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/apia-samoa-temple/apia-samoa-temple-8666.jpg"
+    },
 
-    let filteredTemples = temples;
+    {
+        templeName: "Belem Brazil",
+        location: "Belem, Brazil",
+        dedicated: "2020, November 22",
+        area: 28000,
+        imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/belem-brazil-temple/belem-brazil-temple-31309.jpg"
+    },
 
-    if (filter === "old") {
-        filteredTemples = temples.filter(t => t.dedicated < 1900);
-    } else if (filter === "new") {
-        filteredTemples = temples.filter(t => t.dedicated > 2000);
-    } else if (filter === "large") {
-        filteredTemples = temples.filter(t => t.size > 90000);
-    } else if (filter === "small") {
-        filteredTemples = temples.filter(t => t.size < 10000);
-    }
+    {
+        templeName: "Bern Switzerland",
+        location: "Bern, Switzerland",
+        dedicated: "1955, September 15",
+        area: 35546,
+        imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/bern-switzerland-temple/bern-switzerland-temple-3076.jpg"
+    },
 
-    filteredTemples.forEach(temple => {
-        const card = document.createElement("div");
-        card.classList.add("card");
-        card.innerHTML = `
-            <h3>${temple.name}</h3>
-            <p><strong>Location:</strong> ${temple.location}</p>
-            <p><strong>Dedicated:</strong> ${temple.dedicated}</p>
-            <p><strong>Size:</strong> ${temple.size} sq ft</p>
-            <img src="${temple.image}" alt="${temple.name}" loading="lazy">
-        `;
-        container.appendChild(card);
-    });
-}
+    {
+        templeName: "Boise Idaho",
+        location: "Boise, Idaho",
+        dedicated: "1984, May 30",
+        area: 35868,
+        imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/boise-idaho-temple/boise-idaho-temple-3851.jpg"
+    },
 
-document.querySelectorAll("nav ul li a").forEach(link => {
-    link.addEventListener("click", (event) => {
-        event.preventDefault();
-        const filter = event.target.getAttribute("data-filter");
-        displayTemples(filter);
-    });
-});
+    {
+        templeName: "Campinas Brazil",
+        location: "Camppinas, Brazil",
+        dedicated: "2002, May 17",
+        area: 48100,
+        imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/campinas-brazil-temple/campinas-brazil-temple-5206.jpg"
+    },
 
-displayTemples("all");
+    {
+        templeName: "Colonia Juarez Chihuahua Mexico",
+        location: "Colonia Juarez Chihuahua, Mexico",
+        dedicated: "1999, March 7",
+        area: 6800,
+        imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/colonia-juarez-chihuahua-mexico-temple/colonia-juarez-chihuahua-mexico-temple-35518.jpg"
+
+    },
+
+    {
+        templeName: "Recife Brazil",
+        location: "Recife, Brazil",
+        dedicated: "2000, December 15",
+        area: 37200,
+        imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/recife-brazil-temple/recife-brazil-temple-36780.jpg"
+
+    },
+
+    {
+        templeName: "São Paulo Brazil",
+        location: "São Paulo, Brazil",
+        dedicated: "1978, November 2",
+        area: 59246,
+        imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/sao-paulo-brazil-temple/sao-paulo-brazil-temple-46816.jpg"
+
+    },
+
+    {
+        templeName: "Frankfurt Temple",
+        location: "Frankfurt, Temple",
+        dedicated: "1987, August 30",
+        area: 32895,
+        imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/frankfurt-germany-temple/frankfurt-germany-temple-43184.jpg"
+
+    },
+]
+
+export { temples };
+
+
+
+
+   
+
+     
