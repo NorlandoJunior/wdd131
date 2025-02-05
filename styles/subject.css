@@ -1,27 +1,76 @@
+/* Variables for color scheme */
+:root {
+    --main-bg: #1a1a2e;
+    --secondary-bg: #16213e;
+    --white: #ffffff;
+    --accent: #e94560;
+}
+
+/* General styles */
 body {
     background-color: var(--main-bg);
     color: var(--white);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
 }
 
 h1, h2 {
     color: var(--white);
 }
 
+nav {
+    background-color: var(--secondary-bg);
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
 nav a {
     color: var(--white);
     text-decoration: none;
     padding: 10px;
+    font-weight: bold;
 }
 
 nav a:hover {
-    color: var(--secondary-bg);
+    color: var(--accent);
 }
 
+.hero img {
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    border-radius: 10px;
+}
 
-a {
+.team, .pilots {
+    background-color: var(--secondary-bg);
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    width: 80%;
+}
+
+.team a, .pilots a {
+    display: inline-block;
+    background-color: var(--accent);
     color: var(--white);
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 10px;
 }
 
-a:hover {
-    color: yellow;
+.team a:hover, .pilots a:hover {
+    background-color: var(--white);
+    color: var(--accent);
+}
+
+footer {
+    background-color: var(--secondary-bg);
+    padding: 10px;
+    font-size: 0.9em;
 }
