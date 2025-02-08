@@ -110,7 +110,7 @@ input[type="submit"]{
 
 .submit-container {
   display: flex;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
   width: 100%; 
   margin-top: 10px;
