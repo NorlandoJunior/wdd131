@@ -1,11 +1,13 @@
 *{
     padding: 0.5rem;
-    font-family: "Inter", sans-serif;
 }
 
 body{
     background-color: rgb(218, 218, 218);
-    font-family: "Inter", sans-serif;
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
+    font-weight: 10px;
+    font-style: normal;
 }
 
 h1{
@@ -16,6 +18,10 @@ h1{
     width: 100%;
     max-width: 800px;
     border-radius: 1rem;
+    font-family: "Oswald", serif;
+    font-optical-sizing: auto;
+    font-weight: 20px;
+    font-style: normal;
 }
 
 fieldset{
@@ -106,6 +112,10 @@ input[type="submit"]{
     border-radius: 5px; 
     cursor: pointer; 
     transition: background-color 0.3s ease;
+    font-family: "Oswald", serif;
+    font-optical-sizing: auto;
+    font-weight: 30px;
+    font-style: normal;
 }
 
 .submit-container {

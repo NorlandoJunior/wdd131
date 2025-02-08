@@ -26,4 +26,20 @@
     </footer>
 
 </body>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        let reviewCount = localStorage.getItem("reviewCount") || 0;
+
+        if (document.getElementById("reviewCounter")) {
+            document.getElementById("reviewCounter").textContent = `Reviews Submitted: ${reviewCount}`;
+        }
+
+        const userName = localStorage.getItem("userName");
+        if (userName) {
+            document.getElementById("thankYouMessage").textContent = `Thank you, ${userName}! Your review has been submitted.`;
+        }
+    });
+</script>
+
 </html>
