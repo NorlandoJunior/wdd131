@@ -9,89 +9,89 @@
     <link rel="stylesheet" href="styles/from-mobile.css">
     <link rel="stylesheet" href="styles/from-big-screen.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <main>
 
-
         <h1>Product Review</h1>
 
-        <fieldset>
-            <legend>Product Name</legend>
-            <select name="subject">
-                <option value="Choose Product">Choose Product...</option>
-                <option value="Mouse">Mouse</option>
-                <option value="Keyboard">Keyboard</option>
-                <option value="Headseat">Headseat</option>
-                <option value="Monitor">Monitor</option>
-                <option value="Printer">Printer</option>
-                <option value="Notebook">Notebook</option>
-            </select>
-        </fieldset>
+        <form method="get" action="review.html">
+            <fieldset>
+                <legend>Product Name</legend>
+                <label for="product">Choose a product:</label>
+                <select name="product" id="product">
+                    <option value="">Choose Product...</option>
+                    <option value="Mouse">Mouse</option>
+                    <option value="Keyboard">Keyboard</option>
+                    <option value="Headset">Headset</option>
+                    <option value="Monitor">Monitor</option>
+                    <option value="Printer">Printer</option>
+                    <option value="Notebook">Notebook</option>
+                </select>
+            </fieldset>
 
-        <fieldset>
-            <legend>Overall Rating</legend>
-            <div class="star-rating">
-                <input type="radio" name="stars" id="star-a" value="5"/>
-                <label for="star-a"></label>
-          
-                <input type="radio" name="stars" id="star-b" value="4"/>
-                <label for="star-b"></label>
-            
-                <input type="radio" name="stars" id="star-c" value="3"/>
-                <label for="star-c"></label>
-            
-                <input type="radio" name="stars" id="star-d" value="2"/>
-                <label for="star-d"></label>
-            
-                <input type="radio" name="stars" id="star-e" value="1"/>
-                <label for="star-e"></label>
-          </div>
-        </fieldset>
+            <fieldset>
+                <legend>Overall Rating</legend>
+                <div class="star-rating">
+                    <input type="radio" name="stars" id="star-a" value="5"/>
+                    <label for="star-a"></label>
 
-        <fieldset>
-            <legend>Date of Installation</legend>
-             <input type="date" name="completeDate">
-        </fieldset>
+                    <input type="radio" name="stars" id="star-b" value="4"/>
+                    <label for="star-b"></label>
 
-        <fieldset>
-            <legend>Which features did you find useful in the product? (check all that apply)</legend>
-            <label><input type="checkbox" name="features1" value="Durability"> Durability</label>
-            <label><input type="checkbox" name="features2" value="Ease of Use"> Ease of Use</label>
-            <label><input type="checkbox" name="features3" value="Performance"> Performance</label>
-            <label><input type="checkbox" name="features4" value="Design"> Design</label>
-        </fieldset>
+                    <input type="radio" name="stars" id="star-c" value="3"/>
+                    <label for="star-c"></label>
 
-        <fieldset>
-            <legend>Written Review(optional)</legend>
-            <textarea name="Review user"></textarea>
-        </fieldset>
+                    <input type="radio" name="stars" id="star-d" value="2"/>
+                    <label for="star-d"></label>
 
-        <fieldset>
-            <legend>Your name (optional)</legend>
-            <input type="text" name="User name">
-        </fieldset>
+                    <input type="radio" name="stars" id="star-e" value="1"/>
+                    <label for="star-e"></label>
+                </div>
+            </fieldset>
 
-        <div class="submit-container">
-            <input type="submit" value="Propose My Course">
-        </div>
+            <fieldset>
+                <legend>Date of Installation</legend>
+                <label for="install-date">Select the installation date:</label>
+                <input type="date" id="install-date" name="installDate">
+            </fieldset>
 
+            <fieldset>
+                <legend>Which features did you find useful in the product? (check all that apply)</legend>
+                <label><input type="checkbox" name="features" value="Durability"> Durability</label>
+                <label><input type="checkbox" name="features" value="Ease of Use"> Ease of Use</label>
+                <label><input type="checkbox" name="features" value="Performance"> Performance</label>
+                <label><input type="checkbox" name="features" value="Design"> Design</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Written Review (optional)</legend>
+                <label for="review-text">Your review:</label>
+                <textarea id="review-text" name="reviewText"></textarea>
+            </fieldset>
+
+            <fieldset>
+                <legend>Your name (optional)</legend>
+                <label for="user-name">Enter your name:</label>
+                <input type="text" id="user-name" name="userName">
+            </fieldset>
+
+            <div class="submit-container">
+                <input type="submit" value="Submit Review">
+            </div>
+        </form>
 
     </main>
 
-    
-
     <footer>
-     <p>&copy; <span id="currentyear"></span> 👾 Norlando Santos Barbosa Junior 👾 Brazil. </p>
-     <p id="lastModified"></p>
-     <script src="scripts/getdates.js"></script>
-     <script src="scripts/getdates.js" defer></script>
+        <p>&copy; <span id="currentyear"></span> 👾 Norlando Santos Barbosa Junior 👾 Brazil. </p>
+        <p id="lastModified"></p>
+        <script src="scripts/getdates.js" defer></script>
     </footer>
 
-    
 </body>
 </html>
