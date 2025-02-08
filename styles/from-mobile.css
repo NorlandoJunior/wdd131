@@ -4,7 +4,7 @@
 
 body{
     background-color: rgb(218, 218, 218);
-    font-family: "Inter", serif;
+    font-family: "Inter", sans-serif;
     font-style: normal;
 }
 
@@ -16,7 +16,7 @@ h1{
     width: 100%;
     max-width: 800px;
     border-radius: 1rem;
-    font-family: "Oswald", serif;
+    font-family: "Oswald", sans-serif;
     font-style: normal;
 }
 
@@ -108,7 +108,7 @@ input[type="submit"]{
     border-radius: 5px; 
     cursor: pointer; 
     transition: background-color 0.3s ease;
-    font-family: "Oswald", serif;
+    font-family: "Oswald", sans-serif;
     font-style: normal;
 }
 
