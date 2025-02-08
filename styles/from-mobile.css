@@ -5,8 +5,6 @@
 body{
     background-color: rgb(218, 218, 218);
     font-family: "Inter", serif;
-    font-optical-sizing: auto;
-    font-weight: 10px;
     font-style: normal;
 }
 
@@ -19,8 +17,6 @@ h1{
     max-width: 800px;
     border-radius: 1rem;
     font-family: "Oswald", serif;
-    font-optical-sizing: auto;
-    font-weight: 20px;
     font-style: normal;
 }
 
@@ -113,8 +109,6 @@ input[type="submit"]{
     cursor: pointer; 
     transition: background-color 0.3s ease;
     font-family: "Oswald", serif;
-    font-optical-sizing: auto;
-    font-weight: 30px;
     font-style: normal;
 }
 
