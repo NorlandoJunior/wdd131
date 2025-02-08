@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review</title>
+    <meta name="author" content="Norlando Santos Barbosa Junior">
+    <meta name="description" content="On this web page we will use form functions to present a product evaluation form">
+    <link rel="stylesheet" href="styles/from-mobile.css">
+    <link rel="stylesheet" href="styles/from-big-screen.css">
+</head>
+<body>
+
+    <main>
+        <h1>Product Review</h1>
+
+        <fieldset>
+            <legend>Product Name</legend>
+            <select name="subject">
+                <option value="Choose Product">Choose Product...</option>
+                <option value="Mouse">Mouse</option>
+                <option value="Keyboard">Keyboard</option>
+                <option value="Headseat">Headseat</option>
+                <option value="Monitor">Monitor</option>
+                <option value="Printer">Printer</option>
+                <option value="Notebook">Notebook</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>Overall Rating</legend>
+            <div class="star-rating">
+                <input type="radio" name="stars" id="star-a" value="5"/>
+                <label for="star-a"></label>
+          
+                <input type="radio" name="stars" id="star-b" value="4"/>
+                <label for="star-b"></label>
+            
+                <input type="radio" name="stars" id="star-c" value="3"/>
+                <label for="star-c"></label>
+            
+                <input type="radio" name="stars" id="star-d" value="2"/>
+                <label for="star-d"></label>
+            
+                <input type="radio" name="stars" id="star-e" value="1"/>
+                <label for="star-e"></label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Date of Installation</legend>
+             <input type="date" name="completeDate">
+        </fieldset>
+
+        <fieldset>
+            <legend>Which features did you find useful in the product? (check all that apply)</legend>
+            <label><input type="checkbox" name="features1" value="Durability"> Durability</label>
+            <label><input type="checkbox" name="features2" value="Ease of Use"> Ease of Use</label>
+            <label><input type="checkbox" name="features3" value="Performance"> Performance</label>
+            <label><input type="checkbox" name="features4" value="Design"> Design</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Written Review(optional)</legend>
+            <input type="text" name="Review user">
+        </fieldset>
+
+        <fieldset>
+            <legend>Your name (optional)</legend>
+            <input type="text" name="User name">
+        </fieldset>
+    </main>
+    
+
+    <footer>
+     <p>&copy; <span id="currentyear"></span> 👾 Norlando Santos Barbosa Junior 👾 Brazil. </p>
+     <p id="lastModified"></p>
+     <script src="scripts/getdates.js"></script>
+     <script src="scripts/getdates.js" defer></script>
+    </footer>
+
+    
+</body>
+</html>
