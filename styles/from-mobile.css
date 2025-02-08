@@ -1,6 +1,6 @@
 *{
     padding: 0.5rem;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Inter", serif;
 }
 
 body{
@@ -19,8 +19,8 @@ h1{
 }
 
 fieldset{
-    padding: 10px 20 30;
-    border-width: 0px;
+    padding: 10px;
+    border-color: gray;
     width: 100%;
     max-width: 800px;
     display: flex;
@@ -86,6 +86,40 @@ label {
     }
   }  
   
+  textarea {
+    width: 100%;
+    max-width: 700px; 
+    height: 90px;
+    padding: 8px;
+    font-size: 16px; 
+    border: 1px solid #000; 
+    border-radius: 5px; 
+    resize: vertical;
+}
+
+input[type="submit"]{
+    background-color: black; 
+    color: white; 
+    font-size: 16px; 
+    padding: 10px; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease;
+}
+
+.submit-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%; 
+  margin-top: 10px;
+}
+
+input[type="submit"]:hover {
+  background-color: #333;
+}
+ 
   footer{
     background-color: rgb(0, 0, 0);
     color: white;
