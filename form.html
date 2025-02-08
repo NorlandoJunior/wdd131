@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <script src="scripts/form.js" defer></script>
 </head>
 <body>
 
@@ -23,7 +24,7 @@
             <fieldset>
                 <legend>Product Name</legend>
                 <label for="product">Choose a product:</label>
-                <select name="product" id="product">
+                <select name="product" id="product" required>
                     <option value="">Choose Product...</option>
                     <option value="Mouse">Mouse</option>
                     <option value="Keyboard">Keyboard</option>
@@ -37,19 +38,19 @@
             <fieldset>
                 <legend>Overall Rating</legend>
                 <div class="star-rating">
-                    <input type="radio" name="stars" id="star-a" value="5"/>
+                    <input type="radio" name="stars" id="star-a" value="5" required>
                     <label for="star-a"></label>
 
-                    <input type="radio" name="stars" id="star-b" value="4"/>
+                    <input type="radio" name="stars" id="star-b" value="4" required>
                     <label for="star-b"></label>
 
-                    <input type="radio" name="stars" id="star-c" value="3"/>
+                    <input type="radio" name="stars" id="star-c" value="3" required>
                     <label for="star-c"></label>
 
-                    <input type="radio" name="stars" id="star-d" value="2"/>
+                    <input type="radio" name="stars" id="star-d" value="2" required>
                     <label for="star-d"></label>
 
-                    <input type="radio" name="stars" id="star-e" value="1"/>
+                    <input type="radio" name="stars" id="star-e" value="1" required>
                     <label for="star-e"></label>
                 </div>
             </fieldset>
@@ -57,7 +58,7 @@
             <fieldset>
                 <legend>Date of Installation</legend>
                 <label for="install-date">Select the installation date:</label>
-                <input type="date" id="install-date" name="installDate">
+                <input type="date" id="install-date" name="installDate" required>
             </fieldset>
 
             <fieldset>
