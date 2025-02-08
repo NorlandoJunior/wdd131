@@ -1,11 +1,11 @@
 *{
     padding: 0.5rem;
-    font-family: "Inter", serif;
+    font-family: "Inter", sans-serif;
 }
 
 body{
-    background-color: gray;
-     font-family: "Inter", serif;
+    background-color: rgb(218, 218, 218);
+    font-family: "Inter", sans-serif;
 }
 
 h1{
