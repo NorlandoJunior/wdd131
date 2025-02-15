@@ -53,12 +53,10 @@ nav a:hover {
     text-align:center; 
 }
 
-.teams-cars figure{
-    padding: 10px;
+.information{
     text-align: center;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-
+    padding: 10px;
+    
 }
 
 .team, .pilots {
