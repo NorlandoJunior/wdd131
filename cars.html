@@ -17,7 +17,6 @@
         <nav>
             <a href="subject.html">Home</a>
             <a href="cars.html">Cars</a>
-            <a href="pilots.html">Pilots</a>
             <a href="teams.html">Teams</a>
         </nav>
     </header>
@@ -29,7 +28,9 @@
         <figure>
             <h2>Redbull Racing</h2>
             <picture>
-                <img src="images/red-bull-racing-rb20.webp" alt="Redbull Car 2024" width="500" loading="lazy">
+                <source srcset="images/red-bull-racing-rb20.webp" media="(min-width: 1000px)">
+            <source srcset="images/red-bull-racing-rb20-medium.webp" media="(min-width: 500px)">
+                <img src="images/red-bull-racing-rb20-small.webp" alt="Redbull Car 2024" width="500" loading="lazy">
             </picture>
             <figcaption>Red Bull Racing RB20</figcaption>
 
