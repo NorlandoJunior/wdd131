@@ -8,6 +8,7 @@
     <meta name="description" content="This site talks about Formula 1 Teams and your history">
     <link rel="stylesheet" href="styles/subject.css">
     <link rel="stylesheet" href="styles/subject-large.css">
+    <link src="scripts/subject.js" defer>
 </head>
 
 <body>
@@ -110,7 +111,6 @@
                 <source srcset="images/alpine-team-small.webp" media="(min-width: 500px)">
                 <img src="images/alpine-team.webp" alt="Alpine Team" width="500" loading="lazy">
             </picture>
-            <figcaption>Alpine A524</figcaption>
 
             <p>Alpine F1 Team is a French Formula 1 team that debuted under its current name in 2021, following the rebranding of Renault F1 Team. The team is owned by the French automotive company Groupe Renault and serves as its performance brand in motorsport.
 
@@ -185,7 +185,10 @@
     </main>
 
     <footer>
-        <p>aaaaa</p>
-    </footer>
+        <p>&copy; <span id="currentyear"></span> 👾 Norlando Santos Barbosa Junior 👾 Brazil. </p>
+        <p id="lastModified"></p>
+        <script src="scripts/getdates.js"></script>
+        <script src="scripts/getdates.js" defer></script>
+   </footer>
 
 </body>

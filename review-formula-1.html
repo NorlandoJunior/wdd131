@@ -3,14 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>F1 Information</title>
     <meta name="author" content="Norlando Junior">
     <meta name="description" content="This site talks about Formula 1 cars and drivers for the 2024 season.">
     
     <link rel="stylesheet" href="styles/subject.css">
     <link rel="stylesheet" href="styles/subject-small.css">
+    <link src="scripts/subject.js" defer>
 </head>
-<body>
+
+    <body>
+        <header>
+            <h1>F1 Information</h1>
+            <nav>
+                <a href="subject.html">Home</a>
+                <a href="cars.html">Cars</a>
+                <a href="teams.html">Teams</a>
+            </nav>
+        </header>
+
+        <main>
     
-</body>
+            <h1>Welcome!!! You've joined our Formula fan club!</h1>
+            <div id="reviewCounter"> Members on the club: 0</div>        
+
+        </main>
+    
+        <footer>
+            <p>&copy; <span id="currentyear"></span> 👾 Norlando Santos Barbosa Junior 👾 Brazil. </p>
+            <p id="lastModified"></p>
+            <script src="scripts/getdates.js" defer></script>
+        </footer>
+    
+    </body>
+    
+ <script>
+    document.addEventListener("DOMContentLoaded", function () {
+    let reviewCount = parseInt(localStorage.getItem("reviewCount")) || 0;
+
+    document.getElementById("reviewForm").addEventListener("submit", function (event) {
+        event.preventDefault(); // Impede o envio do formulário para testar localmente
+        reviewCount++;
+        localStorage.setItem("reviewCount", reviewCount);
+
+        const fname = document.getElementById("f-name").value;
+        localStorage.setItem("fname", fname);
+
+        // Atualiza o contador na página
+        if (document.getElementById("reviewCounter")) {
+            document.getElementById("reviewCounter").textContent = `Members on the club: ${reviewCount}`;
+        }
+    });
+
+    // Atualiza o contador ao carregar a página
+    if (document.getElementById("reviewCounter")) {
+        document.getElementById("reviewCounter").textContent = `Members on the club: ${reviewCount}`;
+    }
+});
+</script>
+
 </html>
+
+

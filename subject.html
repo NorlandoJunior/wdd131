@@ -9,6 +9,7 @@
     
     <link rel="stylesheet" href="styles/subject.css">
     <link rel="stylesheet" href="styles/subject-small.css">
+    <link src="scripts/subject.js" defer>
 </head>
 
 <body>
@@ -54,12 +55,11 @@
      
     <h3>Stay up to date with the 2025 news in formula 1</h3>
 
-    <form method="get" action="review-formula-1.html">
-
+    <form id="reviewForm" method="get" action="review-formula-1.html">
         <fieldset>
             <legend>Your Personal Information</legend>
-            <label>First Name* <input type="text" name="fname" required></label>
-            <label>Last Name* <input type="text" name="lname" required></label>
+            <label>First Name* <input type="text" id="f-name" name="fname" required></label>
+            <label>Last Name* <input type="text" id="l-name" name="lname" required></label>
             <label>Phone <input type="tel" name="phone" placeholder="1235551234"></label>
             <label>Email* <input type="email" name="email" placeholder="someone@gmail.com"></label>
         </fieldset>
@@ -79,9 +79,11 @@
 
 
     <footer>
-        <p>&copy; <span id="year"></span> 👾 Norlando Santos Barbosa Junior 👾 Brazil</p>
-        <p>Last Modified: <span id="lastModified"></span></p>
-    </footer>
-    <script src="scripts/getdates.js" defer></script>
+        <p>&copy; <span id="currentyear"></span> 👾 Norlando Santos Barbosa Junior 👾 Brazil. </p>
+        <p id="lastModified"></p>
+        <script src="scripts/getdates.js"></script>
+        <script src="scripts/getdates.js" defer></script>
+   </footer>
 </body>
+
 </html>
