@@ -46,6 +46,21 @@ nav a:hover {
     border-radius: 10px;
 }
 
+.teams-cars img{
+    width: 70%;
+    max-width: 1000px;
+    border-radius: 10px;
+    text-align:center; 
+}
+
+.teams-cars figure{
+    padding: 10px;
+    text-align: center;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+
+}
+
 .team, .pilots {
     background-color: var(--secondary-bg);
     padding: 20px;
