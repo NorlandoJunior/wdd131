@@ -59,15 +59,15 @@ nav a:hover {
     
 }
 
-.team, .pilots {
+.team, .cars {
     background-color: var(--secondary-bg);
     padding: 20px;
     margin: 20px auto;
     border-radius: 10px;
-    width: 80%;
+    width: 85%;
 }
 
-.team a, .pilots a {
+.team a, .cars a {
     display: inline-block;
     background-color: var(--accent);
     color: var(--white);
@@ -77,10 +77,37 @@ nav a:hover {
     margin-top: 10px;
 }
 
-.team a:hover, .pilots a:hover {
+.team a:hover, .cars a:hover {
     background-color: var(--white);
     color: var(--accent);
 }
+
+form {
+    background-color: var(--secondary-bg);
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    width: 85%;
+}
+
+fieldset{
+    margin: 10px;
+    padding: auto;
+    border-radius: 5px;
+    border-color: #e94560;
+}
+
+.submit-container{
+    border-radius: 5px;
+    margin: 5px;
+}
+
+input[type="submit"]:hover {
+    background-color: var(--accent);
+    color: #ffffff;
+  }
+
+
 
 footer {
     background-color: var(--secondary-bg);

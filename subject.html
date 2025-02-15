@@ -43,12 +43,40 @@
             <a href="teams.html">Meet the Teams</a>
         </section>
 
-        <section class="pilots">
+        <section class="cars">
             <h2>Pilots</h2>
-            <p>Discover the talented drivers participating in this year's championship.</p>
-            <a href="pilots.html">Meet the Pilots</a>
+            <p>Find out more about the cars on the grid.</p>
+            <a href="cars.html">Learn about the cars.</a>
         </section>
     </main>
+
+
+     
+    <h3>Stay up to date with the 2025 news in formula 1</h3>
+
+    <form method="get" action="review-formula-1.html">
+
+        <fieldset>
+            <legend>Your Personal Information</legend>
+            <label>First Name* <input type="text" name="fname" required></label>
+            <label>Last Name* <input type="text" name="lname" required></label>
+            <label>Phone <input type="tel" name="phone" placeholder="1235551234"></label>
+            <label>Email* <input type="email" name="email" placeholder="someone@gmail.com"></label>
+        </fieldset>
+
+        <fieldset>
+            <legend>I want know about...</legend>
+            <label><input type="checkbox" name="features" value="Teams"> Teams</label>
+            <label><input type="checkbox" name="features" value="Pilots"> Pilots</label>
+            <label><input type="checkbox" name="features" value="Races"> Races</label>
+            <label><input type="checkbox" name="features" value="Change on Rules"> Change on Rules</label>
+        </fieldset>
+
+        <div class="submit-container">
+            <input type="submit" value="Stay informed!">
+        </div>
+    </form>
+
 
     <footer>
         <p>&copy; <span id="year"></span> 👾 Norlando Santos Barbosa Junior 👾 Brazil</p>
