@@ -33,28 +33,30 @@ document.addEventListener("DOMContentLoaded", () => {
         document.body.style.color = "white";
     }
 });
+
 // count a subimit button
 <script>
 document.addEventListener("DOMContentLoaded", function () {
+    // Tenta obter o valor de reviewCount do localStorage. Se não encontrar, define como 0.
     let reviewCount = parseInt(localStorage.getItem("reviewCount")) || 0;
 
-    document.getElementById("reviewForm").addEventListener("submit", function (event) {
-        event.preventDefault(); // Impede o envio do formulário para testar localmente
-        reviewCount++;
-        localStorage.setItem("reviewCount", reviewCount);
-
-        const fname = document.getElementById("f-name").value;
-        localStorage.setItem("fname", fname);
-
-        // Atualiza o contador na página
-        if (document.getElementById("reviewCounter")) {
-            document.getElementById("reviewCounter").textContent = `Reviews Submitted: ${reviewCount}`;
-        }
-    });
-
-    // Atualiza o contador ao carregar a página
+    // Exibe o número de reviews no elemento
     if (document.getElementById("reviewCounter")) {
         document.getElementById("reviewCounter").textContent = `Reviews Submitted: ${reviewCount}`;
     }
+
+    // Adiciona o listener ao formulário
+    document.getElementById("reviewForm").addEventListener("submit", function (e) {
+        e.preventDefault();  // Evita o comportamento padrão de envio do formulário
+
+        reviewCount++;  // Incrementa o contador
+
+        // Armazena a contagem no localStorage novamente
+        localStorage.setItem("reviewCount", reviewCount);
+
+        // Atualiza o contador de reviews na página
+        document.getElementById("reviewCounter").textContent = `Reviews Submitted: ${reviewCount}`;
+    });
 });
+
 </script>

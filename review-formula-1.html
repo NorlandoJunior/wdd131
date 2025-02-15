@@ -9,7 +9,7 @@
     
     <link rel="stylesheet" href="styles/subject.css">
     <link rel="stylesheet" href="styles/subject-small.css">
-    <link src="scripts/subject.js" defer>
+    <script src="scripts/subject.js" defer></script>
 </head>
 
     <body>
@@ -25,7 +25,7 @@
         <main>
     
             <h1>Welcome!!! You've joined our Formula fan club!</h1>
-            <div id="reviewCounter"> Members on the club: 0</div>        
+            <div id="reviewCounter"> Members on the club: </div>        
 
         </main>
     
@@ -39,27 +39,36 @@
     
  <script>
     document.addEventListener("DOMContentLoaded", function () {
-    let reviewCount = parseInt(localStorage.getItem("reviewCount")) || 0;
-
-    document.getElementById("reviewForm").addEventListener("submit", function (event) {
-        event.preventDefault(); // Impede o envio do formulário para testar localmente
-        reviewCount++;
-        localStorage.setItem("reviewCount", reviewCount);
-
-        const fname = document.getElementById("f-name").value;
-        localStorage.setItem("fname", fname);
-
-        // Atualiza o contador na página
-        if (document.getElementById("reviewCounter")) {
-            document.getElementById("reviewCounter").textContent = `Members on the club: ${reviewCount}`;
-        }
-    });
-
-    // Atualiza o contador ao carregar a página
+    // Tenta obter o valor de reviewCount do localStorage. Se não encontrar, define como 0.
+    let reviewCount = parseInt(localStorage.getItem("reviewCount")) || 5;
+    
+    // Exibe o número de reviews no elemento
+    console.log("Review count inicial:", reviewCount); // Debug: Verifique o valor inicial
     if (document.getElementById("reviewCounter")) {
         document.getElementById("reviewCounter").textContent = `Members on the club: ${reviewCount}`;
     }
+
+    // Adiciona o listener ao formulário
+    const form = document.querySelector("form");
+    if (form) {
+        form.addEventListener("submit", function (e) {
+            e.preventDefault();  // Evita o comportamento padrão de envio do formulário
+
+            reviewCount++;  // Incrementa o contador
+            console.log("Review count após incremento:", reviewCount); // Debug: Verifique o valor após incremento
+
+            // Armazena a contagem no localStorage novamente
+            localStorage.setItem("reviewCount", reviewCount);
+
+            // Atualiza o contador de reviews na página
+            document.getElementById("reviewCounter").textContent = `Members on the club: ${reviewCount}`;
+        });
+    } else {
+        console.log("Formulário não encontrado.");
+    }
 });
+
+
 </script>
 
 </html>
